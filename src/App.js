@@ -12,7 +12,7 @@ function App() {
     const [numMovesLimitLocked, setNumMovesLimitLocked] = useState(3);
     const [numMovesLimit, setNumMovesLimit] = useState(3);
     const [shellChoice, setShellChoice] = useState(null);
-    const [transitionSpeed, setTransitionSpeed] = useState(300);
+    const [transitionSpeed, setTransitionSpeed] = useState(250);
     const [participantName, setParticipantName] = useState('');
     const [gameLog, setGameLog] = useState([]);
     const [currentGameStartTime, setCurrentGameStartTime] = useState(null);
@@ -270,11 +270,11 @@ function App() {
                             <input
                                 type="radio"
                                 name="speed"
-                                value="300"
+                                value="250"
                                 onChange={handleSpeedChange}
-                                checked={transitionSpeed === 300}
+                                checked={transitionSpeed === 250}
                                 disabled={isStarted() && !isFinished()} />
-                            <span>빠름 (300ms)</span>
+                            <span>빠름 (250ms)</span>
                         </label>
 
                         <label className="form__label">
