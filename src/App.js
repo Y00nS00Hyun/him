@@ -259,11 +259,11 @@ function App() {
                             <input
                                 type="radio"
                                 name="speed"
-                                value="150"
+                                value="170"
                                 onChange={handleSpeedChange}
-                                checked={transitionSpeed === 150}
+                                checked={transitionSpeed === 170}
                                 disabled={isStarted() && !isFinished()} />
-                            <span>매우 빠름 (150ms)</span>
+                            <span>매우 빠름 (170ms)</span>
                         </label>
 
                         <label className="form__label">
