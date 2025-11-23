@@ -12,7 +12,7 @@ function App() {
     const [numMovesLimitLocked, setNumMovesLimitLocked] = useState(3);
     const [numMovesLimit, setNumMovesLimit] = useState(3);
     const [shellChoice, setShellChoice] = useState(null);
-    const [transitionSpeed, setTransitionSpeed] = useState(200);
+    const [transitionSpeed, setTransitionSpeed] = useState(300);
     const [participantName, setParticipantName] = useState('');
     const [gameLog, setGameLog] = useState([]);
     const [currentGameStartTime, setCurrentGameStartTime] = useState(null);
@@ -259,44 +259,44 @@ function App() {
                             <input
                                 type="radio"
                                 name="speed"
-                                value="200"
+                                value="150"
                                 onChange={handleSpeedChange}
-                                checked={transitionSpeed === 200}
+                                checked={transitionSpeed === 150}
                                 disabled={isStarted() && !isFinished()} />
-                            <span>매우 빠름 (200ms)</span>
+                            <span>매우 빠름 (150ms)</span>
                         </label>
 
                         <label className="form__label">
                             <input
                                 type="radio"
                                 name="speed"
-                                value="350"
+                                value="300"
                                 onChange={handleSpeedChange}
-                                checked={transitionSpeed === 350}
+                                checked={transitionSpeed === 300}
                                 disabled={isStarted() && !isFinished()} />
-                            <span>빠름 (350ms)</span>
+                            <span>빠름 (300ms)</span>
                         </label>
 
                         <label className="form__label">
                             <input
                                 type="radio"
                                 name="speed"
-                                value="500"
+                                value="400"
                                 onChange={handleSpeedChange}
-                                checked={transitionSpeed === 500}
+                                checked={transitionSpeed === 400}
                                 disabled={isStarted() && !isFinished()} />
-                            <span>보통 (500ms)</span>
+                            <span>보통 (400ms)</span>
                         </label>
 
                         <label className="form__label">
                             <input
                                 type="radio"
                                 name="speed"
-                                value="650"
+                                value="550"
                                 onChange={handleSpeedChange}
-                                checked={transitionSpeed === 650}
+                                checked={transitionSpeed === 550}
                                 disabled={isStarted() && !isFinished()} />
-                            <span>느림 (650ms)</span>
+                            <span>느림 (550ms)</span>
                         </label>
                     </div>
                 </div>
