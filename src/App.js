@@ -331,22 +331,11 @@ function App() {
                             <input
                                 type="radio"
                                 name="difficulty"
-                                value="5"
+                                value="6"
                                 onChange={handleDifficultyChange}
-                                checked={numMovesLimit === 5}
+                                checked={numMovesLimit === 6}
                                 disabled={isStarted() && !isFinished()} />
-                            <span>5회</span>
-                        </label>
-
-                        <label className="form__label">
-                            <input
-                                type="radio"
-                                name="difficulty"
-                                value="7"
-                                onChange={handleDifficultyChange}
-                                checked={numMovesLimit === 7}
-                                disabled={isStarted() && !isFinished()} />
-                            <span>7회</span>
+                            <span>6회</span>
                         </label>
 
                         <label className="form__label">
@@ -358,6 +347,17 @@ function App() {
                                 checked={numMovesLimit === 9}
                                 disabled={isStarted() && !isFinished()} />
                             <span>9회</span>
+                        </label>
+
+                        <label className="form__label">
+                            <input
+                                type="radio"
+                                name="difficulty"
+                                value="12"
+                                onChange={handleDifficultyChange}
+                                checked={numMovesLimit === 12}
+                                disabled={isStarted() && !isFinished()} />
+                            <span>12회</span>
                         </label>
                     </div>
                 </div>
